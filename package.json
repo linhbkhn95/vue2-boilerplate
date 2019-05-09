@@ -1,0 +1,81 @@
+{
+  "name": "vue-2-boilerplate",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test": "vue-cli-service test",
+    "e2e": "vue-cli-service e2e",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "axios-cookiejar-support": "^0.4.2",
+    "bootstrap": "4.1.1",
+    "font-awesome": "^4.7.0",
+    "http-proxy-middleware": "^0.19.1",
+    "register-service-worker": "^1.0.0",
+    "request": "^2.88.0",
+    "tough-cookie": "^3.0.1",
+    "vue": "^2.5.13",
+    "vue-i18n": "^8.0.0",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "vuex-router-sync": "^5.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0",
+    "@vue/cli-plugin-e2e-nightwatch": "^3.0.0",
+    "@vue/cli-plugin-eslint": "^3.0.0",
+    "@vue/cli-plugin-pwa": "^3.0.0",
+    "@vue/cli-plugin-unit-mocha": "^3.0.0",
+    "@vue/cli-service": "^3.0.0",
+    "@vue/eslint-config-airbnb": "^3.0.0",
+    "@vue/test-utils": "^1.0.0-beta.12",
+    "chai": "^4.1.2",
+    "lint-staged": "^7.0.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vue-template-compiler": "^2.5.13"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "description": "A boilerplate for medium to large Vue 2 single page applications",
+  "bugs": {
+    "url": "https://github.com/petervmeijgaard/vue-2-boilerplate/issues"
+  },
+  "lint-staged": {
+    "*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  },
+
+  "keywords": [
+    "Vue",
+    "Next",
+    "Boilerplate",
+    "Webpack",
+    "Lint",
+    "Medium",
+    "Large",
+    "SPA",
+    "Single",
+    "Page",
+    "Application"
+  ],
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "license": "MIT",
+  "proxy": {
+    "/api": "http://localhost/cakephp"
+  }
+}
